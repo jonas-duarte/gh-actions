@@ -28,8 +28,12 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
+  pos-build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo pos build...    
   deploy:
-    needs: build
+    needs: [build, pos-build]
     runs-on: ubuntu-latest
     steps:
       - run: echo deploying...
