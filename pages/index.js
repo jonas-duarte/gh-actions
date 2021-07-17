@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <div>
-        <h1>Testing GitHub Actions</h1>
+        <h1>Testing GitHub Actions</h>
       </div>
     </div>
   )
